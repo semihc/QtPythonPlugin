@@ -21,7 +21,7 @@ target_include_directories(${libNm}
     #-${PrjSrc}/base
 )
 
-target_link_libraries(${libNm} PUBLIC Qt::Core PRIVATE pybind11::embed)
+target_link_libraries(${libNm} PUBLIC Qt::Core pybind11::embed)
 
 #[[
 install(

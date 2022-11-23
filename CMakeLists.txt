@@ -34,8 +34,10 @@ cmake_policy(SET CMP0100 NEW)
 set(PrjSrc ${CMAKE_SOURCE_DIR}/src)
 
 
-enable_testing()
+
 add_subdirectory(src)
 
+enable_testing()
+add_subdirectory(tst)
 
 

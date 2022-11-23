@@ -1,0 +1,1 @@
+add_subdirectory(qtpypi_test)

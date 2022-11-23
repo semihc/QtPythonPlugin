@@ -36,10 +36,24 @@ shared_ptr<py::scoped_interpreter> QtPythonPI::s_pyint(nullptr);
 //
 // Methods
 //
+void QtPythonPI::exec(const string& pstr)
+{
+}
+
+void QtPythonPI::eval(const string& pstr)
+{
+}
+
+void QtPythonPI::eval_file(const string& pfile)
+{
+}
+
+/*ERASE
 QString QtPythonPI::echo(const QString &message)
 {
     return message;
 }
+*/
 
 
 //

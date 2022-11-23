@@ -27,9 +27,13 @@ public:
 
     // CREATORS
     QtPythonPI() {}
+    ~QtPythonPI() {}
 
     // MODIFIERS
-    QString echo(const QString &message) override;
+    //-QString echo(const QString &message) override;
+    virtual void exec(const std::string& pstr);
+    virtual void eval(const std::string& pstr);
+    virtual void eval_file(const std::string& pfile);
 
 
     // STATIC MEMBERS
