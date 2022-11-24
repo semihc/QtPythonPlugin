@@ -17,4 +17,4 @@ target_include_directories(${appNm}
 
 #-set_property(TARGET ${appNm} PROPERTY ENABLE_EXPORTS 1)
 
-target_link_libraries(${appNm} PUBLIC Qt::Core PRIVATE pybind11::pybind11 GTest::gtest)
+target_link_libraries(${appNm} PUBLIC Qt::Core pybind11::pybind11 GTest::gtest)

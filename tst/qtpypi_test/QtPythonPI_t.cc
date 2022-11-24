@@ -17,7 +17,7 @@ static QtPythonInterface* Qtpyif = nullptr;
 static QPluginLoader PluginLoader{};
 
 
-bool QtPythonPI_LoadPlugin(const string& piName = "qtpypi"s)
+bool QtPythonPI_LoadPlugin(const string& piName = "qtpypi")
 {
     QDir pluginsDir(QCoreApplication::applicationDirPath());
 #if defined(Q_OS_WIN)
