@@ -33,6 +33,7 @@ bool QtPythonPI_LoadPlugin(const string& piName = "qtpypi")
     //-pluginsDir.cd("plugins");
     const QStringList entries = pluginsDir.entryList(QDir::Files);
     for (const QString &fileName : entries) {
+         cout << "Testing file: " << fileName.toLatin1().data() << endl;
         PluginLoader.setFileName(pluginsDir.absoluteFilePath(fileName));
         // Get the root object in the plugin
         QObject *plugin = PluginLoader.instance();

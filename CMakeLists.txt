@@ -8,6 +8,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED OFF)
 set(CMAKE_DISABLE_IN_SOURCE_BUILD ON)
 set(CMAKE_DISABLE_SOURCE_CHANGES  ON)
 
+# Prerequisite packages
+if(WIN32)
+  set(GTest_DIR C:/opt/TC/local/lib/cmake/GTest)
+  set(pybind11_DIR C:/opt/TC/local/share/cmake/pybind11)
+endif()
+
 # Google Libraries
 find_package(GTest CONFIG REQUIRED) # Gtest/mock
 #-
